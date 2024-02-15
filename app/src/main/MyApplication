@@ -1,0 +1,18 @@
+import android.app.Application;
+import com.moengage.core.MoEngage;
+import com.moengage.core.config.FcmConfig;
+import com.moengage.core.config.MoEConfig;
+import com.moengage.core.logger.LogLevel;
+
+public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        initializeMoEngageSDK();
+    }
+
+    private void initializeMoEngageSDK() {
+        // Your MoEngage SDK initialization code goes here
+    }
+}
