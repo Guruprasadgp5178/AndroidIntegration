@@ -3,6 +3,8 @@ import com.moengage.core.MoEngage;
 import com.moengage.core.config.FcmConfig;
 import com.moengage.core.config.MoEConfig;
 import com.moengage.core.logger.LogLevel;
+import com.moengage.core.DataCenter
+import com.moengage.core.MoEngage
 
 public class MyApplication extends Application {
 
@@ -13,6 +15,8 @@ public class MyApplication extends Application {
     }
 
     private void initializeMoEngageSDK() {
-        // Your MoEngage SDK initialization code goes here
+       	val moEngage = MoEngage.Builder(this, "SO4PCE7SVGA3BL9ATUWEOO5F", [DataCenter.DATA_CENTER_1])
+                     .build()
+MoEngage.initialiseDefaultInstance(moEngage)
     }
 }
